@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connexion</title>
+    <title>Document</title>
 </head>
 <body>
-
     <!-- Header et navigation -->
     <header>
         <div id='logo'>
@@ -27,33 +26,34 @@
         </nav>
 
     </header>
-        <!-- Section principale - formulaire de Connexion-->
+
+    <!-- Section principale - formulaire de récuperation du mot de passe -->
     <div>
         <div>
-            <h3>Connexion</h3>
+            <h3>Mot de passe oublié?</h3>
+            <h3>Saississez votre nom d'utilisateur pour en choisir un nouveau</h3>
         </div>
         <form action="" method="POST">
             <div>
-                <label for="user_name"> Nom d'utilisateur</label><br>
-                <input type="text" id="user_name" name="user_name">
+                <label for="secret_question"> Question secrète</label><br>
+                <p>Question secrète de l'utilisateur</p>
             </div>
             <div>
-                <label for="password"> Mot de passe</label><br>
-                <input type="password" id="password" name="password">
+                <label for="secret_answer"> Réponse à la question secrète</label><br>
+                <input type="text" id="secret_answer" name="secret_answer" required>
             </div>
             <div>
-                <input type="submit" value="SE CONNECTER">
+                <label for="password"> Nouveau mot de passe</label><br>
+                <input type="password" id="password" name="password"required>
             </div>
             <div>
-                <a href="recuperation_1.html">Mot de passe oublié?</a>
+                <label for="password"> Confirmer le nouveau mot de passe</label><br>
+                <input type="password" id="password" name="password"required>
             </div>
             <div>
-                <p>Vous n'avez pas encore de compte? <a href="inscription.html">Inscrivez-vous ici.</a></p>
+                <input type="submit" value="VALIDER">
             </div>
-        </form>
-    </div>
-    
-    
+
     <!-- Footer -->
     <footer>
         <a href="">Mention Legal | </a>

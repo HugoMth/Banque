@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connexion</title>
+    <title>Document</title>
 </head>
 <body>
-
     <!-- Header et navigation -->
     <header>
         <div id='logo'>
@@ -27,33 +26,22 @@
         </nav>
 
     </header>
-        <!-- Section principale - formulaire de Connexion-->
+
+    <!-- Section principale - formulaire de récuperation du mot de passe -->
     <div>
         <div>
-            <h3>Connexion</h3>
+            <h3>Mot de passe oublié?</h3>
+            <h3>Saississez votre nom d'utilisateur pour en choisir un nouveau</h3>
         </div>
-        <form action="" method="POST">
+        <form action="recuperation_2.html" method="POST">
             <div>
-                <label for="user_name"> Nom d'utilisateur</label><br>
-                <input type="text" id="user_name" name="user_name">
+                <label for="user_name">Nom d'utilisateur</label><br>
+                <input type="text" id="user_name" name="user_name" >
             </div>
             <div>
-                <label for="password"> Mot de passe</label><br>
-                <input type="password" id="password" name="password">
+            <input type="submit" value="Envoyer ma demande">
             </div>
-            <div>
-                <input type="submit" value="SE CONNECTER">
-            </div>
-            <div>
-                <a href="recuperation_1.html">Mot de passe oublié?</a>
-            </div>
-            <div>
-                <p>Vous n'avez pas encore de compte? <a href="inscription.html">Inscrivez-vous ici.</a></p>
-            </div>
-        </form>
-    </div>
-    
-    
+
     <!-- Footer -->
     <footer>
         <a href="">Mention Legal | </a>

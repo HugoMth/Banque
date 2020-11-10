@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+</head>
+<body>
+
+     <!-- Header et navigation -->
+     <header>
+        <div id='logo'>
+            <a href="index.html">
+                <img src="../images/logo_gbaf.png" alt="logo_gbaf">
+            </a>
+
+        </div>
+        <nav>
+            <a href=""> 
+                <img src="../images/user.png" alt="icone user">
+                <p> Prénom Nom</p>
+            </a>
+           <a href="connexion.html">
+               <img src="../images/logout.png" alt="icone sign out">
+               <button>Déconnexion</button>
+           </a>
+        </nav>
+
+    </header>
+    
+        <!-- Section principale - formulaire d'inscription-->
+        <div>
+            <div>
+                <h3>Inscription</h3>
+            </div>
+            <form action="" method="POST">
+                <div>
+                    <label for="name"> Nom</label><br>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="first_name"> Prénom</label><br>
+                    <input type="text" id="first_name" name="first_name" required>
+                </div>
+                <div>
+                    <label for="user_name"> Nom d'utilisateur</label><br>
+                    <input type="text" id="user_name" name="user_name" required>
+                </div>
+                <div>
+                    <label for="password"> Mot de passe</label><br>
+                    <input type="password" id="password" name="password"required>
+                </div>
+                <div>
+                    <label for="secret_question"> Question secrète</label><br>
+                    <input type="text" id="secret_question" name="secret_question" required>
+                </div>
+                <div>
+                    <label for="secret_answer"> Réponse à la question secrète</label><br>
+                    <input type="text" id="secret_answer" name="secret_answer" required>
+                </div>
+                <div>
+                    <input type="checkbox" name="condition_utilisation" required>
+                    <label for="condition_utilisation">J'ai lu et j'accepte les <a href="#">Conditions Générales d'Utilisation</a> et la <a href="#">Politique de Protection des Données Personnelles</a>.</label><br>
+                    
+                </div>
+                <div>
+                    <input type="submit" value="S'INSCRIRE">
+                </div>
+                <div>
+                    <a href="">Mot de passe oublié?</a>
+                </div>
+                <div>
+                    <p>Vous avez déjà un compte? <a href="connexion.html">Connectez-vous ici.</a></p>
+                </div>
+            </form>
+
+      
+    <!-- Footer -->
+    <footer>
+        <a href="">Mention Legal | </a>
+        <a href="">Contact</a>
+    </footer>
+</body>
+</html>

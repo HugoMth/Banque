@@ -39,10 +39,13 @@ body
  h3
  {
     font-family: 'Libre Baskerville';
-    font-size: 28px;
+    font-size: 25px;
  }
 
-
+a
+{
+    font-family: Roboto;
+}
 
 
 
@@ -50,12 +53,13 @@ body
 /* header */
 
 header
-{
+{   
     background-color: #ECEDEA;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     padding: 0 70px;
+    border-bottom: solid rgba(0, 0, 0, 0.87);
 }
 
 #logo img
@@ -68,6 +72,7 @@ header
 .navbar
 {
     padding : 10px;
+    
 }
 .navbar a
 {
@@ -100,6 +105,7 @@ footer
     display: flex;
     justify-content: center;
     padding: 50px 50px;
+    border-top: solid rgba(0, 0, 0, 0.87);
     
 }
 
@@ -108,10 +114,112 @@ footer
     
     font-size: 20px;
     text-decoration: none;
-    color: rgba(0, 0, 0, 0.87
-    );
+    color: rgba(0, 0, 0, 0.87);
 }
 .subtract
 {
     height: 15px;
+}
+
+
+
+
+/*style general du corp de page */
+
+/* .main
+{
+padding: 50px;
+} */
+
+/*  Section de présentation du site  - page index - */
+
+#section_titre
+{
+    border-bottom: solid  rgba(0, 0, 0, 0.87);
+    padding: 10px 20px;
+    /* background-color: #ECEDEA; */
+    
+}
+#section_titre h1
+{
+    text-align: center;
+}
+#section_titre p
+{
+    text-align: justify;
+    margin: 25px
+}
+
+.banniere
+{
+   margin: auto;
+    width: 100%;
+    height: 350px;
+    background: no-repeat center center/ cover url(../images/office.jpg);
+    border-radius: 5px;
+    
+}
+
+/*  section de présentation du projet - page index - */
+
+#section_projet
+{
+    padding: 5px 20px 10px 20px;
+    
+    /* background-color:#ECEDEA ; */
+}
+#section_projet p, h2
+{
+    text-align: justify;
+    margin: 25px;
+    
+}
+
+
+/* Section grid des pages partenaires - page index - */
+
+#main
+{
+    background-color:#ECEDEA ;
+    padding: 10px 20px 10px 20px;
+    margin: 40px;
+    border: solid black;
+    border-radius: 10px;
+}
+
+.partenaire
+{   position: relative;
+    padding: 20px;
+    margin: 10px;
+    border: solid black;
+    border-radius: 10px;
+    min-height: 145px;
+}
+.partenaire img
+{
+ width: 200px;
+ height: 100px;
+ float: left;
+ margin: 0 10px 0 0;
+ 
+}
+
+.partenaire p, h3
+{
+    text-align: justify;
+    margin: 10px;
+    
+    
+}
+.partenaire .button_suite
+{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    padding: 2px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border: solid black;
+    border-radius: 5px;
 }

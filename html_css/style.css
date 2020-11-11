@@ -1,0 +1,117 @@
+/*Importation police */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap'); 
+
+
+/* element général */
+
+*{
+    box-sizing: border-box;
+}
+
+body
+{
+    margin:0;
+}
+
+ /* Choix police */
+
+ p 
+ {
+     font-family: Roboto;
+     font-size: 16px;
+ }
+
+ h1 
+ {
+    font-family: 'Libre Baskerville';
+    font-size: 40px;
+ }
+
+ h2
+ {
+    font-family: 'Libre Baskerville';
+    font-size: 30px;
+ }
+
+ h3
+ {
+    font-family: 'Libre Baskerville';
+    font-size: 28px;
+ }
+
+
+
+
+
+
+/* header */
+
+header
+{
+    background-color: #ECEDEA;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 70px;
+}
+
+#logo img
+{
+    width: 71px;
+    height: 90px;
+    margin-left: 10px;
+}
+
+.navbar
+{
+    padding : 10px;
+}
+.navbar a
+{
+        float: left;
+        text-align: center;
+        padding: 10px;
+        margin: 10px;
+        color: black;
+        text-decoration: none;
+        font-size: 16px;
+        border: solid black;
+        border-radius: 5px;
+        font-family: Roboto;
+}
+      
+
+
+.icone
+{
+    width: 15px;
+    height: 16px;
+}
+
+
+/* footer */
+
+footer
+{
+    background-color: #ECEDEA;
+    display: flex;
+    justify-content: center;
+    padding: 50px 50px;
+    
+}
+
+#footer_link a 
+{
+    
+    font-size: 20px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.87
+    );
+}
+.subtract
+{
+    height: 15px;
+}

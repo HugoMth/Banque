@@ -225,3 +225,96 @@ footer
 }
 
 
+/* Connexion.html */
+
+
+.connect_form
+{
+    width: 800px;
+    margin: 4% auto;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 30px;
+    padding-bottom: 50px;
+    
+    
+}
+.connect_form form
+{    
+    font-family: Roboto;
+    width: 100%;
+    
+}
+.connect_form h3
+{
+    width: 50%;
+    margin: 20px auto;
+    text-align: center;
+    padding-bottom: 10px;
+
+
+}
+
+.connect_form label
+{
+    width: 70%;
+    margin: auto 10%;
+}
+
+.connect_form input[type=text], .connect_form input[type=password]
+{
+    border: none;
+    width: 70%;
+    border-bottom: 1px solid #ccc ;
+    padding: 10px 5px;
+    margin: 15px 10%;
+    
+    
+}
+
+.connect_form input[type=text]:focus, .connect_form input[type=password]:focus
+{
+    outline: none;
+    box-shadow: 0px 1px 1px  rgba(0, 0, 0, 0.4) ;
+    border-radius: 10px;
+}
+
+/* sert à désactiver le fond de couleur et les bordure de google chrome pour les chanmps autofill */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active 
+ {
+  -webkit-box-shadow: 0 0 0 30px white inset;
+}
+/* bouton submit pour toutes les pages */
+input[type=submit]
+{
+    width: 50%;
+    margin: 30px 25%;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+    font-family: Roboto;
+    font-weight: bold;
+}
+
+input[type=submit]:hover
+{
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4) ;
+    color: white;
+    background-color: #cb0202 ;
+}
+
+#password_forget
+{
+    text-align: right;
+    margin: auto 20%;
+}
+
+#inscription
+{
+    text-align: center;
+    
+}

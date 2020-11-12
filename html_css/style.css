@@ -33,7 +33,7 @@ body
  h2
  {
     font-family: 'Libre Baskerville';
-    font-size: 30px;
+    font-size:  30px;
  }
 
  h3
@@ -54,7 +54,7 @@ a
 
 header
 {   
-    background-color: #ECEDEA;
+    background-color:  #ECEDEA;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -121,15 +121,7 @@ footer
     height: 15px;
 }
 
-
-
-
-/*style general du corp de page */
-
-/* .main
-{
-padding: 50px;
-} */
+/* Index.html */
 
 /*  Section de présentation du site  - page index - */
 
@@ -223,3 +215,7 @@ padding: 50px;
     border: solid black;
     border-radius: 5px;
 }
+
+
+/* Connexion.html */
+

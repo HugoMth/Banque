@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Connexion</title>
 </head>
-<body>
+<body id="connexion_html">
 
     <!-- Header et navigation -->
     <header>
@@ -26,26 +26,33 @@
 
     </header>
         <!-- Section principale - formulaire de Connexion-->
-    <div>
-        <div>
-            <h3>Connexion</h3>
-        </div>
+    <div class="connect_form">
         <form action="" method="POST">
+            <div >
+                <h3>Connexion</h3>
+            </div>
+
             <div>
                 <label for="user_name"> Nom d'utilisateur</label><br>
-                <input type="text" id="user_name" name="user_name">
+                <input class="connect_field" type="text" id="user_name" name="user_name" placeholder="Entrer votre nom d'utilisateur">
             </div>
+
             <div>
                 <label for="password"> Mot de passe</label><br>
-                <input type="password" id="password" name="password">
+                <input class="connect_field" type="password" id="password" name="password" placeholder="Entrer votre mot de passe">
             </div>
+
+            <div id="password_forget">
+                <a href="recuperation_1.html">Mot de passe oublié?</a>
+            </div>
+
+
             <div>
                 <input type="submit" value="SE CONNECTER">
             </div>
-            <div>
-                <a href="recuperation_1.html">Mot de passe oublié?</a>
-            </div>
-            <div>
+
+            
+            <div id="inscription">
                 <p>Vous n'avez pas encore de compte? <a href="inscription.html">Inscrivez-vous ici.</a></p>
             </div>
         </form>

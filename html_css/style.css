@@ -45,9 +45,16 @@ body
 a
 {
     font-family: Roboto;
+    text-decoration: underline;
+    color: black;
+    
 }
 
-
+a:hover
+{
+    color: #cb0202;
+    text-decoration: none;
+}
 
 
 /* header */
@@ -170,7 +177,8 @@ footer
 
 /* Section grid des pages partenaires - page index - */
 
-#main
+
+.main
 {
     background-color:#ECEDEA ;
     padding: 10px 20px 10px 20px;
@@ -216,6 +224,4 @@ footer
     border-radius: 5px;
 }
 
-
-/* Connexion.html */
 

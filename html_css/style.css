@@ -225,7 +225,7 @@ footer
 }
 
 
-/* Connexion.html */
+/* Connexion.html et inscription.html */
 
 
 .connect_form
@@ -317,4 +317,97 @@ input[type=submit]:hover
 {
     text-align: center;
     
+}
+
+
+/* Autres formulaires du site  */
+
+.form
+{
+    width: 800px;
+    margin: 4% auto;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 30px;
+    padding-bottom: 50px;
+    
+}
+
+.form form
+{    
+    font-family: Roboto;
+    width: 100%;
+    
+}
+
+.form h3
+{
+    width: 50%;
+    margin: 20px auto;
+    text-align: center;
+    padding-bottom: 10px;
+
+
+}
+.form h4
+{
+    width: 70%;
+    margin: 20px auto;
+    text-align: center;
+    padding-bottom: 10px;
+
+
+}
+.form label
+{
+    width: 70%;
+    margin: auto 11%;
+}
+
+.form input[type=text], .form input[type=password]
+{
+    
+    width: 70%;
+    border: 1px solid #ccc ;
+    border-radius: 10px;
+    padding: 10px 5px;
+    margin: 15px 10%;
+    
+    
+}
+.form input[type=text]:focus, .form input[type=password]:focus
+{
+    
+    width: 70%;
+    border: 1px solid #ccc ;
+    border-radius: 10px;
+    padding: 10px 5px;
+    margin: 15px 10%;
+    outline: none;
+    
+    
+}
+/* inscription.html */
+#already_account
+{
+    text-align: center;
+    
+}
+#accept_condition label
+{
+    text-align: left;
+   margin: 0%;
+    padding: 0;
+}
+#accept_condition 
+{
+    text-align: left;
+    margin: auto 10%;
+    padding: 0;
+}
+
+#question_temp
+{
+    width: 70%;
+    margin: 20px 11%;
+    text-decoration: underline;
 }

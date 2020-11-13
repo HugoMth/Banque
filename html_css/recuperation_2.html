@@ -25,15 +25,16 @@
 
     </header>
     <!-- Section principale - formulaire de récuperation du mot de passe -->
-    <div>
-        <div>
-            <h3>Mot de passe oublié?</h3>
-            <h3>Saississez votre nom d'utilisateur pour en choisir un nouveau</h3>
-        </div>
+    <div class="form">
+        
         <form action="" method="POST">
             <div>
+                <h3>Mot de passe oublié?</h3>
+                <h4>Saississez votre nom d'utilisateur pour en choisir un nouveau</h4>
+            </div>
+            <div>
                 <label for="secret_question"> Question secrète</label><br>
-                <p>Question secrète de l'utilisateur</p>
+                <p id="question_temp">Question secrète de l'utilisateur</p>
             </div>
             <div>
                 <label for="secret_answer"> Réponse à la question secrète</label><br>
@@ -50,6 +51,8 @@
             <div>
                 <input type="submit" value="VALIDER">
             </div>
+        </form>
+    </div>
 
     <!-- footer-->
     <footer>

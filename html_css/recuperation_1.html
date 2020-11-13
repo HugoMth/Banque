@@ -26,12 +26,12 @@
     </header>
 
     <!-- Section principale - formulaire de récuperation du mot de passe -->
-    <div>
-        <div>
-            <h3>Mot de passe oublié?</h3>
-            <h3>Saississez votre nom d'utilisateur pour en choisir un nouveau</h3>
-        </div>
-        <form action="recuperation_2.html" method="POST">
+    <div class="form">
+       <form action="recuperation_2.html" method="POST">
+            <div>
+                <h3>Mot de passe oublié?</h3>
+                <h4>Saississez votre nom d'utilisateur pour en choisir un nouveau</h4>
+            </div>
             <div>
                 <label for="user_name">Nom d'utilisateur</label><br>
                 <input type="text" id="user_name" name="user_name" >
@@ -39,7 +39,8 @@
             <div>
             <input type="submit" value="Envoyer ma demande">
             </div>
-
+        </form>
+    </div>
     <!-- footer-->
     <footer>
         <div id="footer_link">

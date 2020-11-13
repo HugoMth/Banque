@@ -27,11 +27,12 @@
     </header>
     
         <!-- Section principale - formulaire d'inscription-->
-        <div>
-            <div>
-                <h3>Inscription</h3>
-            </div>
+        <div class="connect_form">
+            
             <form action="" method="POST">
+                <div>
+                    <h3>Inscription</h3>
+                </div>
                 <div>
                     <label for="name"> Nom</label><br>
                     <input type="text" id="name" name="name" required>
@@ -60,19 +61,22 @@
                     <label for="secret_answer"> Réponse à la question secrète</label><br>
                     <input type="text" id="secret_answer" name="secret_answer" required>
                 </div>
-                <div>
+                <div id="accept_condition">
                     <input type="checkbox" name="condition_utilisation" required>
-                    <label for="condition_utilisation">J'ai lu et j'accepte les <a href="#">Conditions Générales d'Utilisation</a> et la <a href="#">Politique de Protection des Données Personnelles</a>.</label><br>
+                    <label for="condition_utilisation">
+                        <span> J'ai lu et j'accepte les <a href="#">Conditions Générales d'Utilisation</a> et la <a href="#">Politique de Protection des Données Personnelles</a>.
+                        </span>
+                    </label><br>
                     
                 </div>
                 <div>
                     <input type="submit" value="S'INSCRIRE">
                 </div>
-                <div>
+                <div id="already_account">
                     <p>Vous avez déjà un compte? <a href="connexion.html">Connectez-vous ici.</a></p>
                 </div>
             </form>
-
+        </div>
       
     <!-- footer-->
     <footer>

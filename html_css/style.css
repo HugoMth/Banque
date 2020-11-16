@@ -113,7 +113,6 @@ footer
     justify-content: center;
     padding: 50px 50px;
     border-top: solid rgba(0, 0, 0, 0.87);
-    
 }
 
 #footer_link a 
@@ -167,7 +166,7 @@ footer
     
     /* background-color:#ECEDEA ; */
 }
-#section_projet p, h2
+#section_projet p, #section_projet h2
 {
     text-align: justify;
     margin: 25px;
@@ -204,7 +203,7 @@ footer
  
 }
 
-.partenaire p, h3
+.partenaire p, .partenaire h3
 {
     text-align: justify;
     margin: 10px;
@@ -250,6 +249,7 @@ footer
     margin: 20px auto;
     text-align: center;
     padding-bottom: 10px;
+    
 
 
 }
@@ -328,8 +328,7 @@ input[type=submit]:hover
     margin: 4% auto;
     border: 1px solid rgba(0, 0, 0, 0.4);
     border-radius: 30px;
-    padding-bottom: 50px;
-    
+    padding-bottom: 50px;    
 }
 
 .form form
@@ -387,11 +386,7 @@ input[type=submit]:hover
     
 }
 /* inscription.html */
-#already_account
-{
-    text-align: center;
-    
-}
+
 #accept_condition label
 {
     text-align: left;
@@ -404,10 +399,127 @@ input[type=submit]:hover
     margin: auto 10%;
     padding: 0;
 }
+#already_account
+{
+    text-align: center;
+    
+}
 
-#question_temp
+/* page de récuperation 1.html */
+
+#form_recuperation1
+{
+    height: 60vh;
+    padding: 4%;
+}
+
+
+/* page de récupération2.html */
+
+
+#question_temporaire 
+/* La question secrete écrite en static */
 {
     width: 70%;
     margin: 20px 11%;
     text-decoration: underline;
+}
+
+
+/* page partenaire */
+
+.page_partenaire
+{
+    
+    width: 80%;
+    margin: 1% auto;
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.4); */
+    padding: 20px 20px 100px 20px;
+
+    
+}
+
+.page_partenaire img
+{
+    margin: auto 10%;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.page_partenaire li
+{
+    list-style: none;
+    font-family: Roboto;
+}
+.separateur
+{
+    width: 40%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    margin: 0px auto;
+}
+
+.commentaire
+{
+    width: 80%;
+    margin: 2% auto;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    padding: 20px;
+}
+.commentaire h4
+{
+    text-align: center;
+    font-family: 'Libre Baskerville';
+    font-size: 20px;
+}
+
+.like_button
+{
+    font-family: Roboto;
+    text-align: right;
+    margin: 3% 1%;
+}
+.com
+{
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    margin: 1% auto;
+    border-radius: 10px;
+
+}
+.com p
+{
+    margin: 20px 10px;
+}
+
+.com_form
+{
+    width: 100%;
+    margin: 4% auto;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 30px;
+    padding-bottom: 50px;
+}
+
+.com_form h5
+{
+    
+    width: 80%;
+    margin: 4% auto;
+    font-size: 20px;
+    
+    
+    
+}
+.com_form textarea
+{
+    width: 90%;
+    margin: auto 5%;
+    height:200px;
+}
+
+.com_form textarea:focus
+{
+    outline: none;
+
 }

@@ -42,11 +42,16 @@ body
     font-size: 25px;
  }
 
+h4, h5
+{
+    font-size: 20px;
+}
 a
 {
     font-family: Roboto;
     text-decoration: underline;
     color: black;
+
     
 }
 
@@ -87,12 +92,13 @@ header
         text-align: center;
         padding: 10px;
         margin: 10px;
-        color: black;
+        color: white;
         text-decoration: none;
         font-size: 16px;
         border: solid black;
         border-radius: 5px;
         font-family: Roboto;
+        background-color:  #cb0202;
 }
       
 
@@ -113,6 +119,7 @@ footer
     justify-content: center;
     padding: 50px 50px;
     border-top: solid rgba(0, 0, 0, 0.87);
+    /* text-align: center; */
 }
 
 #footer_link a 
@@ -164,7 +171,6 @@ footer
 {
     padding: 5px 20px 10px 20px;
     
-    /* background-color:#ECEDEA ; */
 }
 #section_projet p, #section_projet h2
 {
@@ -177,7 +183,7 @@ footer
 /* Section grid des pages partenaires - page index - */
 
 
-.main
+.grid
 {
     background-color:#ECEDEA ;
     padding: 10px 20px 10px 20px;
@@ -471,7 +477,6 @@ input[type=submit]:hover
 {
     text-align: center;
     font-family: 'Libre Baskerville';
-    font-size: 20px;
 }
 
 .like_button
@@ -506,7 +511,6 @@ input[type=submit]:hover
     
     width: 80%;
     margin: 4% auto;
-    font-size: 20px;
     
     
     
@@ -522,4 +526,168 @@ input[type=submit]:hover
 {
     outline: none;
 
+}
+
+
+/* media query */
+
+@media only screen and (max-width: 1024px)
+{
+     
+
+    .form , .connect_form, .commentaire
+    {
+        width: 90%;
+        min-width: 320px;
+        border: none;
+        
+
+    }
+    .com_form
+    {
+        border: none;
+    }
+    
+
+    #already_account p, #inscription p, #password_forget
+    {
+        text-align: center;
+        font-size: 12px;
+    }
+
+    #form_recuperation1
+    {
+        height: 60vh;
+        padding: 0px;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 768px)
+{
+    h1 
+    {
+        
+        font-size: 30px;
+    }
+
+    h2
+    {
+        
+        font-size:  20px;
+    }
+
+    h3
+    {
+        
+        font-size: 15px;
+    }
+    h4, h5
+    {
+        font-size: 12px;
+    }
+
+    p{
+        font-size: 12px;
+        text-align: left;
+    }
+
+    ul
+    {
+        font-size: 12px;
+    }
+    header 
+    {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        width: 100%;
+        min-width: 320px;
+    }
+    #logo img
+    {
+        margin-left: 0;
+    }
+   .navbar a 
+   {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       font-size: 10px;
+       margin: 2px;
+       padding: 2px;
+   }
+   .navbar  
+   {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+   }
+
+   #footer_link a 
+   {
+       font-size: 15px;
+
+   }
+   .subtract
+    {
+        height: 10px;
+    }
+
+    .form label, .connect_form label
+    {
+        font-size: 12px;
+    }
+
+
+    /* index.html corp */
+
+    .banniere
+    {
+        width: 100%;
+        margin: 5px;
+    }
+
+    .grid 
+    {
+        margin: 0px;
+        border: none;
+        border-radius: 0px;
+    }
+    .partenaire p, .partenaire h3
+    {
+        text-align: left;
+        width: 90%;
+    }
+    .partenaire img
+    {
+        width: 90%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    .partenaire .button_suite
+    {
+        font-size: 10px;
+    }
+
+    .page_partenaire
+    {
+        width: 90%;
+    }
+
+    .page_partenaire img
+    {
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+    .com_form h5
+    {
+        text-align: center;
+    }
 }

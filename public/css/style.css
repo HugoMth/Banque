@@ -1,0 +1,576 @@
+/*Importation police */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+
+/* element général */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #ECEDEA;
+}
+
+
+/* Choix police */
+
+p {
+    font-family: Roboto;
+    font-size: 16px;
+}
+
+h1 {
+    font-family: 'Libre Baskerville';
+    font-size: 40px;
+}
+
+h2 {
+    font-family: 'Libre Baskerville';
+    font-size: 30px;
+}
+
+h3 {
+    font-family: 'Libre Baskerville';
+    font-size: 25px;
+}
+
+h4,
+h5 {
+    font-size: 20px;
+}
+
+a {
+    font-family: Roboto;
+    text-decoration: underline;
+    color: black;
+}
+
+a:hover {
+    color: #cb0202;
+    text-decoration: none;
+}
+
+
+/* header */
+
+header {
+    background-color: #ECEDEA;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 70px;
+    border-bottom: solid rgba(0, 0, 0, 0.87);
+}
+
+#logo img {
+    width: 71px;
+    height: 90px;
+    margin-left: 10px;
+    
+}
+
+.navbar {
+    padding: 12px;
+}
+
+.navbar a {
+    background-color: #cb0202;
+    float: left;
+    text-align: center;
+    padding: 10px;
+    margin: 0px 10px 10px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    font-family: Roboto;
+}
+
+.icone {
+    width: 13px;
+    height: 14px;
+}
+
+
+/* footer */
+
+footer {
+    background-color: #ECEDEA;
+    display: flex;
+    justify-content: center;
+    padding: 50px 50px;
+    border-top: solid rgba(0, 0, 0, 0.87);
+    /* text-align: center; */
+}
+
+#footer_link a {
+    font-size: 20px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.subtract {
+    height: 15px;
+}
+
+
+/* Index.html */
+
+
+/*  Section de présentation du site  - page index - */
+
+#section_titre {
+    background-color: #ECEDEA;
+    border-bottom: solid rgba(0, 0, 0, 0.87);
+    padding: 10px 20px;
+    /* background-color: #ECEDEA; */
+}
+
+#section_titre h1 {
+    text-align: center;
+}
+
+#section_titre p {
+    text-align: justify;
+    margin: 25px
+}
+
+.banniere {
+    margin: auto;
+    width: 100%;
+    height: 350px;
+    background: no-repeat center center/ cover url(../images/office.jpg);
+    border-radius: 5px;
+}
+
+
+/*  section de présentation du projet - page index - */
+
+#section_projet {
+    background-color: #ECEDEA;
+    padding: 5px 20px 10px 20px;
+}
+
+#section_projet p,
+#section_projet h2 {
+    text-align: justify;
+    margin: 25px 25px 0px 25px;
+}
+
+
+/* Section grid des pages partenaires - page index - */
+#section_grid {
+    padding-top: 50px;
+}
+.grid {
+    
+    background-color: white;
+    padding: 20px 30px ;
+    margin: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.partenaire {
+    background-color: #ECEDEA;
+    position: relative;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    min-height: 145px;
+}
+
+.partenaire img {
+    width: 200px;
+    height: 100px;
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+.partenaire p,
+.partenaire h3 {
+    text-align: justify;
+    margin: 0px  10px 20px 10px;
+}
+
+.partenaire .button_suite {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    padding: 4px;
+    background-color:#cb0202;
+    color: white;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow:0px 1px 1px rgba(0, 0, 0, 0.4); ;
+}
+
+
+/* Connexion.html et inscription.html */
+
+.connect_form {
+    background-color: white;
+    width: 800px;
+    margin: 4% auto;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 30px;
+    padding-bottom: 50px;
+}
+
+.connect_form form {
+    font-family: Roboto;
+    width: 100%;
+}
+
+.connect_form h3 {
+    width: 50%;
+    margin: 20px auto ;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.connect_form h4 {
+    width: 70%;
+    margin: 20px auto;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.connect_form label {
+    width: 70%;
+    margin: auto 10%;
+}
+
+.connect_form input[type=text],
+.connect_form input[type=password] {
+    border: none;
+    width: 70%;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 5px;
+    margin: 15px 10%;
+}
+
+.connect_form input[type=text]:focus,
+.connect_form input[type=password]:focus {
+    outline: none;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+
+
+/* sert à désactiver le fond de couleur et les bordure de google chrome pour les chanmps autofill */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px white inset;
+}
+
+
+/* bouton submit pour toutes les pages */
+
+input[type=submit] {
+    width: 50%;
+    margin: 30px 25%;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+    font-family: Roboto;
+    font-weight: bold;
+}
+
+input[type=submit]:hover {
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+    color: white;
+    background-color: #cb0202;
+}
+
+#password_forget {
+    text-align: right;
+    margin: auto 20%;
+}
+
+#inscription {
+    text-align: center;
+}
+/* inscription.html */
+
+#accept_condition label {
+    text-align: left;
+    margin: 0%;
+    padding: 0;
+}
+
+#accept_condition {
+    text-align: left;
+    margin: auto 10%;
+    padding: 0;
+}
+
+#already_account {
+    text-align: center;
+}
+
+
+/* ajustement de la page de récuperation 1.html */
+
+#form_recuperation1 {
+    height: 60vh;
+    padding: 1%;
+}
+#title_recup_1{
+    margin-bottom: 60px;
+}
+/* page de récupération2.html */
+/* La question secrete écrite en static */
+#question{
+    width: 70%;
+    margin: 20px 11%;
+    font-size: 18px;
+    
+}
+
+
+/* page partenaire */
+
+.page_partenaire {
+    width: 80%;
+    margin: 1% auto;
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.4); */
+    padding: 20px 20px 100px 20px;
+}
+
+.page_partenaire img {
+    margin: auto 10%;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+.separateur {
+    width: 60%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+    margin: 1px auto;
+}
+.commentaire {
+    background-color: white;
+    width: 98%;
+    margin: 4% auto;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    padding: 40px;
+}
+.commentaire h4 {
+    text-align: center;
+    font-family: 'Libre Baskerville';
+}
+.like_button {
+    font-family: Roboto;
+    text-align: right;
+    margin: 3% 1%;
+    text-decoration: none;
+}
+.like_button a {
+    text-decoration: none;
+    font-size: 20px;
+}
+.icone_like {
+    width: 18px;
+    height: 20px;
+}
+.com {
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    margin: 1% auto;
+    border-radius: 10px;
+}
+.com p {
+    margin: 20px 10px;
+}
+.com_form {
+    width: 100%;
+    margin: 4% auto;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 30px;
+    padding-bottom: 50px;
+}
+.com_form h5 {
+    width: 80%;
+    margin: 4% auto;
+}
+.com_form textarea {
+    width: 90%;
+    margin: auto 5%;
+    height: 200px;
+}
+.com_form textarea:focus {
+    outline: none;
+}
+/* message d'alerte pour les information incorrects */
+#alert{
+    text-align: center;
+    background-color: rgb(168, 68, 68);
+    color: white;
+    width: 80%;
+    padding: 5px;
+    margin: -10px auto 15px auto;
+    border-radius: 10px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
+   }
+   #alert p{
+   font-size: 16px;
+   }
+
+/* media query */
+
+@media only screen and (max-width: 1024px) {
+    .form,
+    .connect_form,
+    .commentaire {
+        width: 90%;
+        min-width: 320px;
+        border: none;
+    }
+    .com_form {
+        border: none;
+    }
+    #already_account p,
+    #inscription p,
+    #password_forget {
+        text-align: center;
+        font-size: 12px;
+    }
+    #form_recuperation1 {
+        height: 60vh;
+        padding: 0px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 15px;
+    }
+    h4,
+    h5 {
+        font-size: 12px;
+    }
+    p {
+        font-size: 12px;
+        text-align: left;
+    }
+    ul {
+        font-size: 12px;
+    }
+    header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        width: 100%;
+        min-width: 320px;
+    }
+    #logo img {
+        margin-left: 0;
+    }
+    .navbar a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+        margin: 2px;
+        padding: 2px;
+    }
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #footer_link a {
+        font-size: 15px;
+    }
+    .subtract {
+        height: 10px;
+    }
+    .form label,
+    .connect_form label {
+        font-size: 12px;
+    }
+    /* index.html corp */
+    .banniere {
+        width: 100%;
+        margin: 5px;
+    }
+    .grid {
+        margin: 0px;
+        border: none;
+        border-radius: 0px;
+    }
+    .partenaire p,
+    .partenaire h3 {
+        text-align: left;
+        width: 90%;
+    }
+    .partenaire img {
+        width: 90%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    .partenaire .button_suite {
+        font-size: 10px;
+    }
+    .page_partenaire {
+        width: 90%;
+    }
+    .page_partenaire img {
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+    .like_button {
+        font-family: Roboto;
+        text-align: right;
+        margin: 3% 1%;
+        text-decoration: none;
+    }
+    .like_button a {
+        text-decoration: none;
+        font-size: 12px;
+    }
+    .icone_like {
+        width: 10px;
+        height: 12px;
+    }
+    .com_form h5 {
+        text-align: center;
+    }
+    #alert{
+        text-align: center;
+        background-color: rgb(168, 68, 68);
+        color: white;
+        width: 70%;
+        padding: 1px;
+        margin: -20px auto 10px auto;
+        border-radius: 10px;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
+       }
+       #alert p{
+       font-size: 12px;
+       text-align: center;
+       }
+}
+
+
+

@@ -2,6 +2,7 @@
     // on teste la fonction 'user_connected' pour laisser ou non l'accès à la page
     require_once 'fonction_public/try_session.php';
     user_connected();
+    
     $title = "Acceuil";
     include_once 'composants/header.php';
 ?>

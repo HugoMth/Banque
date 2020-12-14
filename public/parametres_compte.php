@@ -1,7 +1,10 @@
 <?php
-session_start();
-$title = "Paramètres du compte";
-require_once 'composants/header.php';
+    // on teste la fonction 'user_connected' pour laisser ou non l'accès à la page
+    require_once 'fonction_public/try_session.php';
+    user_connected();
+
+    $title = "Paramètres du compte";
+    require_once 'composants/header.php';
 ?>
  <!-- Section principale - formulaire d'inscription-->
 <div class="connect_form">
@@ -10,13 +13,16 @@ require_once 'composants/header.php';
     <div>
         <h3>Parametres du compte</h3>
     </div>
-<?php if(array_key_exists('mpa', $_GET)) { ?>
-<div id="alert"><p>Veuilliez entrer le bon mot de passe.</p></div>
-<?php } ?>
-<?php if(array_key_exists('nmp', $_GET)){?>
-    <div id="alert"><p>Les nouveaux mot de passe ne correspondent pas!</p></div>
-<?php } ?>
 
+    <!-- messages d'erreur -->
+    <?php if(array_key_exists('mpa', $_GET)) { ?>
+    <div id="alert"><p>Veuilliez entrer le bon mot de passe.</p></div>
+    <?php } ?>
+    <?php if(array_key_exists('nmp', $_GET)){?>
+        <div id="alert"><p>Les nouveaux mot de passe ne correspondent pas!</p></div>
+    <?php } ?>
+
+    <!-- formulaire de modification -->
     <div>
         <label for="first_name"> Prénom</label><br>
         <input type="text" id="first_name" name="prenom" required value= "<?php echo $_SESSION['prenom']?>">
@@ -56,5 +62,5 @@ require_once 'composants/header.php';
 </div>
 
 <?php
-require_once 'composants/footer.php';
+    require_once 'composants/footer.php';
 ?>

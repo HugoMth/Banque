@@ -71,7 +71,7 @@
                     <h5>Avez-vous un commentaire?</h5>
                 </div>
                 <div>
-                    <textarea id="msg" name="post"></textarea>
+                    <textarea id="msg" name="post" required></textarea>
                 </div>
                 <div>
                     <input type="submit">

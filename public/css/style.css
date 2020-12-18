@@ -428,15 +428,20 @@ input[type=submit]:hover {
 /* media query */
 
 @media only screen and (max-width: 1024px) {
-    .form,
     .connect_form,
     .commentaire {
         width: 90%;
         min-width: 320px;
         border: none;
+        padding-top: 10px;
+        padding-bottom: 20px;
     }
     .com_form {
         border: none;
+        padding-bottom: 10px;
+    }
+    input[type=submit] {
+        margin-bottom: 10px;
     }
     #already_account p,
     #inscription p,
@@ -488,8 +493,9 @@ input[type=submit]:hover {
         justify-content: center;
         align-items: center;
         font-size: 10px;
-        margin: 2px;
+        margin: 3px;
         padding: 2px;
+        width: 80px;
     }
     .navbar {
         display: flex;

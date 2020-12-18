@@ -3,7 +3,7 @@
     require_once 'fonction_public/try_session.php';
     user_connected();
     
-    $_SESSION['id_acteur'] = $_GET['id_acteur'];
+    $_SESSION['id_acteur'] = filter_var($_GET['id_acteur'], FILTER_VALIDATE_INT);
     $title = "Partenaire";
     require_once 'composants/header.php';
 ?>
@@ -60,7 +60,7 @@
 <!-- section d'entrée de nouveaux commentaires -->
 <?php 
     // on fait apparaitre ou non le formulaire de commentaire (en fonction de si l'utilisateur a déjà commenté)
-    require_once "fonction_public/autorisation_com.php";
+    require_once "fonction_public/auth_comment.php";
 
     if (!$com_right) { ?>
 
